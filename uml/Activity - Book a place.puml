@@ -1,0 +1,16 @@
+@startuml
+'https://plantuml.com/activity-diagram-beta
+
+start
+:Request reservation place;
+:Owner checks availability;
+
+if (place.isAvailable()) then (true)
+  :Paythe price;
+  :Place booked;
+else (false)
+endif
+
+stop
+
+@enduml

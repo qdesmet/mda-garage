@@ -1,0 +1,16 @@
+@startuml
+'https://plantuml.com/activity-diagram-beta
+
+start
+:Press open button;
+:Digital Key send signal;
+
+if (DigitalLock.validateKey()) then (true)
+  :Motor turn gears;
+  :Gate Open;
+else (false)
+endif
+
+stop
+
+@enduml

@@ -1,0 +1,16 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+Close : Gate is closed
+Open : Gate is open
+Opening : The gate is opening
+Closing : The gate is closing
+
+[*] --> Close
+
+Open --> Closing : Valid key
+Close --> Opening : Valid key
+Opening --> Open : Opening
+Closing --> Close : Closing
+
+@enduml
